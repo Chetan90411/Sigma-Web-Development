@@ -121,7 +121,7 @@ select {
 
 .btn-red,
 .main input {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   padding: 12px 25px;
 }
 
@@ -136,7 +136,7 @@ select {
 .faq-end input {
   background-color: rgba(15, 15, 15, 0.7);
   border-radius: 3px;
-  font-size: 15px;
+  font-size: 1em;
   color: white;
   padding: 18px 150px 18px 18px;
   border: 0.5px solid rgba(225, 225, 225, 0.4);
@@ -152,13 +152,6 @@ select {
 }
 
 /* first section */
-
-@media screen and (max-width: 1300px) {
-  .first{
-    flex-wrap: wrap;
-    padding-top: 5px;
-  }
-}
 
 .first {
   display: flex;
@@ -203,7 +196,7 @@ select {
   width: 39vw;
 }
 
-.first div:last-child{
+.first div:last-child {
   z-index: 10;
 }
 .card {
@@ -278,6 +271,7 @@ select {
 
 .faq-end div:first-child {
   font-size: 20px;
+  text-align: center;
 }
 
 footer {
@@ -308,8 +302,35 @@ footer > div {
 }
 
 @media screen and (max-width: 1300px) {
+  nav {
+    max-width: 90vw;
+  }
+
+  .first {
+    flex-wrap: wrap;
+    padding-top: 5px;
+  }
   .footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .faq h2 {
+    font-size: 32px;
+  }
+  .hero span:nth-child(1) {
+    font-size: 32px;
+  }
+  .hero span:nth-child(2) {
+    font-size: 18px;
+  }
+  .hero span:nth-child(3) {
+    font-size: 18px;
   }
 }

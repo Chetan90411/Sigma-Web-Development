@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('NetflixSans-Thin.woff2') format('woff2'),
+        url('NetflixSans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('NetflixSans-Regular.woff2') format('woff2'),
+        url('NetflixSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('NetflixSans-Bold.woff2') format('woff2'),
+        url('NetflixSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('NetflixSans-Medium.woff2') format('woff2'),
+        url('NetflixSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('NetflixSans-Black.woff2') format('woff2'),
+        url('NetflixSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('NetflixSans-Light.woff2') format('woff2'),
+        url('NetflixSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Netflix Sans Icon';
+    src: url('NetflixSans-Icon.woff2') format('woff2'),
+        url('NetflixSans-Icon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

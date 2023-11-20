@@ -28,13 +28,12 @@ body {
 }
 /* Nav-Bar */
 nav {
-  max-width: 80vw;
+  max-width: 60vw;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 62px;
-  padding: 1rem;
+  height: 100px;
 }
 
 nav img {
@@ -43,7 +42,7 @@ nav img {
 }
 
 nav img,
-button {
+nav button {
   position: relative;
   z-index: 10;
 }
@@ -63,8 +62,7 @@ select {
 /* Hero Section */
 .hero {
   font-family: "Netflix Sans";
-  height: 86%;
-  /* height: calc(100% - 62px); */
+  height: calc(100% - 100px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,21 +72,21 @@ select {
   gap: 23px;
   padding: 0 30px;
 }
-.hero span {
+.hero {
   text-align: center;
 }
-.hero span:nth-child(1) {
+.hero > :nth-child(1) {
   font-weight: 1000;
   font-size: 3rem;
   width: 85vw;
 }
 
-.hero span:nth-child(2) {
+.hero > :nth-child(2) {
   font-weight: 400;
   font-size: 1.5rem;
 }
 
-.hero span:nth-child(3) {
+.hero > :nth-child(3) {
   font-weight: 400;
   font-size: 1.25rem;
 }
@@ -96,6 +94,8 @@ select {
 .separation {
   height: 0.5rem;
   background-color: #232323;
+  position: relative;
+  z-index: 20;
 }
 .btn {
   padding: 5px 20px;
@@ -106,7 +106,12 @@ select {
   border-radius: 4px;
   cursor: pointer;
 }
-
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 .btn-red-sm {
   padding: 8px 1rem;
 }
@@ -122,7 +127,7 @@ select {
 .btn-red,
 .main input {
   font-size: 1.5em;
-  padding: 12px 25px;
+  padding: 12px 20px;
 }
 
 .btn-red {
@@ -142,11 +147,6 @@ select {
   border: 0.5px solid rgba(225, 225, 225, 0.4);
 }
 
-.hero-buttons {
-  display: flex;
-  gap: 10px;
-}
-
 .lang {
   padding: 0 5px 0 0;
 }
@@ -159,8 +159,7 @@ select {
   justify-content: center;
   align-items: center;
   max-width: 70vw;
-  margin: auto;
-  padding: 4.5rem 0;
+  margin: 5rem auto;
 }
 .secImg {
   position: relative;
@@ -180,23 +179,23 @@ select {
   width: 400px;
 }
 
-.first > div {
+section.first > div {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  /* padding: 34px 0; */
 }
 
-.first > div span:first-child {
+section.first > div span:first-child {
   font-size: 48px;
   font-weight: 700;
 }
 
-.first > div span:last-child {
+section.first > div span:last-child {
   font-size: 24px;
   width: 39vw;
 }
 
-.first div:last-child {
+section.first div:last-child {
   z-index: 10;
 }
 .card {
@@ -314,6 +313,9 @@ footer > div {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+  .second .secImg {
+    margin-top: -7rem;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -322,6 +324,8 @@ footer > div {
     flex-direction: column;
   }
   .faq h2 {
+    margin: 3rem;
+    text-align: center;
     font-size: 32px;
   }
   .hero span:nth-child(1) {
@@ -333,4 +337,84 @@ footer > div {
   .hero span:nth-child(3) {
     font-size: 18px;
   }
+  .btn-red {
+    padding: 8px 12px;
+    width: 15rem;
+  }
+  .first {
+    /* margin: 2rem auto; */
+    text-align: center;
+  }
+  .first > div {
+    align-items: center;
+    /* margin: auto; */
+  }
+
+  .second,
+  .third div:last-of-type {
+    margin-bottom: 3rem;
+  }
+
+  .secImg > img {
+    width: 320px;
+    top: 62px;
+  }
+  .secImg video {
+    width: 250px;
+    position: absolute;
+    left: 40px;
+  }
+  .third .secImg {
+    position: relative;
+    align-items: center;
+    right: 4rem;
+  }
+  .third .secImg img {
+    left: 3rem;
+  }
+  .third .secImg video {
+    width: 180px;
+    position: absolute;
+    top: 88px;
+    left: 7.3rem;
+  }
+  .card {
+    height: 4rem;
+    top: 15rem;
+    left: 1rem;
+  }
+  .card-img img {
+    width: 3px;
+  }
+  .sp-1 {
+    margin: 6rem auto 1rem auto;
+  }
+  .first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fourth .secImg > img {
+    padding-bottom: 4rem;
+  }
+  .first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem auto;
+  }
+  .second .secImg {
+    margin-top: -6rem;
+  }
+  /* .second .secImg > img{
+    width: 20rem;
+    top: 0;
+  }
+  .second .secImg > div{
+    top: 10.5rem;
+    left: 4rem;
+    width: 12rem;
+    height: 3rem;
+  }
+  */
 }

@@ -20,7 +20,7 @@ let operation = prompt("Enter the operation which you would like to perform");
 
 let probability = Math.random();
 
-if (probability < 0.1) {
+if (probability <= 0.1) {
     if ("+" === operation) {
         console.log(firstNumber - secondNumber);
     }

@@ -58,5 +58,5 @@ else {
     businessName += anotherWords.slice(13);
 }
 
-// alert("Business name:  " + businessName); alert to display in html or use console.log() to display in console
+// alert("Business name:  " + businessName); alert to display in browser or use console.log() to display in console
 console.log("Business name:  " + businessName);

@@ -30,7 +30,7 @@ let businessName = "";
 if (adjectiveProbability <= 0.33) {
     businessName = adjectives.slice(0, 6);
 }
-else if (adjectiveProbability <= 0.33) {
+else if (adjectiveProbability <= 0.66) {
     businessName = adjectives.slice(6, 14);
 }
 else {
@@ -41,7 +41,7 @@ else {
 if (shopNamesProbability <= 0.33) {
     businessName += shopNames.slice(0, 7);
 }
-else if (shopNamesProbability <= 0.33) {
+else if (shopNamesProbability <= 0.66) {
     businessName += shopNames.slice(7, 13);
 }
 else {
@@ -51,12 +51,12 @@ else {
 if (anotherWordsProbability <= 0.33) {
     businessName += anotherWords.slice(0, 5);
 }
-else if (anotherWordsProbability <= 0.33) {
+else if (anotherWordsProbability <= 0.66) {
     businessName += anotherWords.slice(5, 13);
 }
 else {
     businessName += anotherWords.slice(13);
 }
 
-// alert("Business name:  " + businessName); alert to display in browser or use console.log() to display in console
 console.log("Business name:  " + businessName);
+alert("Business name:  " + businessName);

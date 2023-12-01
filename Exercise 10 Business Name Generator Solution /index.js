@@ -47,7 +47,7 @@ probability = Math.random();
 if (probability <= 0.33) {
     third = "Bros";
 }
-else if (probabilty <= 0.66) {
+else if (probability <= 0.66) {
     third = "Limited";
 }
 else {

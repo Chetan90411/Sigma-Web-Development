@@ -14,12 +14,12 @@ console.log(document.querySelector('.container').outerHTML);
 console.log(document.querySelector('.box').outerHTML);
 
 // tagName will get the tag name of the selected element
-console.log('\ntagNage: ');
+console.log('\ntagName: ');
 console.log(document.querySelector('.container').tagName);
 console.log(document.querySelector('.box').tagName);
 
 // nodeName will get the node name of the selected element which includes comment node and text node
-console.log('\ntagNage: ')
+console.log('\nnodeNage: ')
 console.log(document.querySelector('.container').nodeName);
 console.log(document.querySelector('.box').nodeName);
 
